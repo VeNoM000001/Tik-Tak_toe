@@ -1,0 +1,102 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+*, *::after, *::before {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.root {
+    background-color: #121818;
+    min-height: 100vh;
+    padding-top: 1px;
+    font-family: "Poppins", sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.title {
+    color: #fff;
+    text-align: center;
+    font-size: 40px;
+}
+
+.image {
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.image img {
+    width: 50px;
+    height: 50px;
+}
+
+.display {
+    color: #fff;
+    font-size: 25px;
+    text-align: center;
+    margin-top: 1em;
+    margin-bottom: 1em;
+}
+
+.hide {
+    display: none;
+}
+
+.container {
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 33% 33% 33%;
+    grid-template-rows: 33% 33% 33%;
+    max-width: 300px;
+}
+
+.tile {
+    border: 1px solid #fff;
+    min-width: 100px;
+    min-height: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 50px;
+    cursor: pointer;
+}
+
+.playerX {
+    color: #09c372;
+}
+
+.playerY {
+    color: #498afb;
+}
+
+.controls {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    margin-top: 1em;
+}
+
+.ironMan {
+    background: url(icons/ironman.png) center center no-repeat;
+    background-size: cover;
+}
+.captain {
+    background: url(icons/shield.png) center center no-repeat;
+    background-size: cover;
+}
+
+#reset {
+    cursor: pointer;
+    padding: 0.6em 1.8em;
+    border-radius: 5px;
+    outline: none;
+    border: none;
+    font-size: 1.1rem;
+    margin-top: 10px;
+}
